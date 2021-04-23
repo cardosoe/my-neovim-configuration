@@ -48,6 +48,9 @@ nmap <silent> <F3> :NERDTreeToggle<CR>>
 Plug 'ryanoasis/vim-devicons'
 set encoding=utf8
 
+autocmd VimEnter * NERDTree
+
+
 Plug 'mattn/emmet-vim'
 
 "Code Completion
