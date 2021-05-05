@@ -39,3 +39,8 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" Python virtual environment detection in linux
+let g:loaded_python_provider = 0
+"virtual environment python with venv
+let g:python3_host_prog= '/usr/bin/python3.8'

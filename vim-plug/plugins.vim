@@ -14,11 +14,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    
+    " Git Integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
   
   Plug 'liuchengxu/vim-which-key'
   Plug 'joshdick/onedark.vim' 
   Plug 'vim-airline/vim-airline-themes'
   Plug 'vim-airline/vim-airline'
+
+  " Other themes
+    Plug 'morhetz/gruvbox'
 
 "   Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 "
@@ -68,6 +77,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
 "
 call plug#end()
+
+" Gruvbox por defecto
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='hard'
+set background=dark
 
 let g:user_emmet_leader_key=','
 
