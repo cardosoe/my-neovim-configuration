@@ -44,3 +44,5 @@ cmap w!! w !sudo tee %
 let g:loaded_python_provider = 0
 "virtual environment python with venv
 let g:python3_host_prog= '/usr/bin/python3.8'
+let g:node_host_prog = '/usr/local/bin/neovim-node-host'
+
